@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "YourTechMate — Jasa IT Panggilan | Servis PC, Laptop & Jaringan",
   description:
-    "Layanan IT profesional on-site di Jabodetabek. Servis PC & Laptop, Install OS & Software, Setup Jaringan/Wi-Fi, Rakit PC Custom. Teknisi berpengalaman, bergaransi, dan harga transparan.",
+    "Layanan IT profesional on-site di area Jakarta, Bogor, Depok, dan Bekasi. Servis PC & Laptop, Install OS & Software, Setup Jaringan/Wi-Fi, Rakit PC Custom. Teknisi berpengalaman, bergaransi, dan harga transparan.",
   keywords: [
     "jasa IT panggilan",
     "servis laptop panggilan",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "setup wifi",
     "rakit PC gaming",
     "teknisi IT Jakarta",
-    "Jabodetabek",
+    "Jakarta Bogor Depok Bekasi",
   ],
   openGraph: {
     title: "YourTechMate — Jasa IT Panggilan",

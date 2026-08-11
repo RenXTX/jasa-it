@@ -27,12 +27,12 @@ export default function CoverageArea() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight tracking-tight">
               Kami Melayani{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#25D366] to-[#128C7E]">
-                Jabodetabek
+                Jakarta, Bogor, Depok & Bekasi
               </span>
             </h2>
             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-              Layanan panggilan on-site kami tersedia di seluruh area
-              Jabodetabek. Teknisi kami siap hadir di lokasi Anda dalam waktu
+              Layanan panggilan on-site kami tersedia untuk area Jakarta, Bogor, Depok, dan Bekasi.
+              Teknisi kami siap hadir di lokasi Anda dalam waktu
               singkat.
             </p>
 

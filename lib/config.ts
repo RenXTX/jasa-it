@@ -19,13 +19,8 @@ export const OPERATING_HOURS = {
 };
 
 export const COVERAGE_AREAS = [
-  "Jakarta Selatan",
-  "Jakarta Barat",
-  "Jakarta Timur",
-  "Jakarta Utara",
-  "Jakarta Pusat",
-  "Tangerang",
-  "Tangerang Selatan",
+  "Jakarta",
+  "Bogor",
   "Depok",
   "Bekasi",
 ];
