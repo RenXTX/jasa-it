@@ -3,7 +3,7 @@
 // Ubah nilai-nilai di sini sesuai data bisnis Anda
 // ============================================================
 
-export const WHATSAPP_NUMBER = "6281234567890"; // Ganti dengan nomor WA bisnis Anda
+export const WHATSAPP_NUMBER = "6281295844201";
 
 export const BRAND = {
   name: "YourTechMate",
