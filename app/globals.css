@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* =========================================
+   Design Tokens & Brand Colors
+   ========================================= */
+:root {
+  --bg-primary: #0a0f1e;
+  --bg-secondary: #0d1526;
+  --bg-card: #111827;
+  --color-wa: #25d366;
+  --color-wa-hover: #1ebe57;
+  --color-wa-dark: #128c7e;
+  --text-primary: #f9fafb;
+  --text-secondary: #94a3b8;
+  --text-muted: #4b5563;
+  --border-subtle: #1e293b;
+}
+
+/* =========================================
+   Base Styles
+   ========================================= */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-inter, system-ui, -apple-system, sans-serif);
+  min-height: 100vh;
+}
+
+/* =========================================
+   Custom Scrollbar
+   ========================================= */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-wa-dark);
+}
+
+/* =========================================
+   Selection Color
+   ========================================= */
+::selection {
+  background: #25d36640;
+  color: #fff;
+}
+
+/* =========================================
+   Smooth focus ring
+   ========================================= */
+*:focus-visible {
+  outline: 2px solid var(--color-wa);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* =========================================
+   Floating WA Button animation delay utility
+   ========================================= */
+.animation-delay-500 {
+  animation-delay: 0.5s;
+}
