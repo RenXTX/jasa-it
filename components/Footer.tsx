@@ -115,7 +115,7 @@ export default function Footer() {
             <p className="text-xs text-slate-500 text-center sm:text-left">
               © {year} {BRAND.fullName}. Hak cipta dilindungi.
             </p>
-            <p className="text-xs text-slate-600 text-center sm:text-right max-w-sm">
+            <p className="text-xs text-yellow-300 text-center sm:text-right max-w-sm">
               Disclaimer: Harga dapat berubah tergantung kondisi perangkat.
               Estimasi biaya final diberikan setelah teknisi melakukan diagnosa
               on-site.
