@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, User, MapPin, Wrench, MessageSquare } from "lucide-react";
-import { SERVICES, WHATSAPP_NUMBER } from "@/lib/config";
+import { SERVICES, WHATSAPP_NUMBER, BRAND } from "@/lib/config";
 
 interface FormData {
   name: string;
@@ -47,7 +47,7 @@ export default function OrderForm() {
       `🛠️ *Layanan:* ${selectedService}`,
       form.notes ? `📝 *Detail Keluhan:* ${form.notes}` : null,
       ``,
-      `_Dikirim melalui website TechCare_`,
+      `_Dikirim melalui website ${BRAND.name}_`,
     ]
       .filter(Boolean)
       .join("\n");

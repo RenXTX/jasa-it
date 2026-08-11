@@ -6,11 +6,11 @@
 export const WHATSAPP_NUMBER = "6281234567890"; // Ganti dengan nomor WA bisnis Anda
 
 export const BRAND = {
-  name: "TechCare",
+  name: "YourTechMate",
   tagline: "Jasa IT Panggilan",
-  fullName: "TechCare — Jasa IT Panggilan",
-  email: "techcare@email.com",
-  instagram: "https://instagram.com/techcare_it",
+  fullName: "YourTechMate — Jasa IT Panggilan",
+  email: "yourtechmate@email.com",
+  instagram: "https://instagram.com/yourtechmate",
 };
 
 export const OPERATING_HOURS = {

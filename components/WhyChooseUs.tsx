@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { DollarSign, ShieldCheck, MapPin, Zap } from "lucide-react";
+import { BRAND } from "@/lib/config";
 
 const reasons = [
   {
@@ -60,7 +61,7 @@ export default function WhyChooseUs() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
             Kenapa Pilih{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#25D366] to-[#128C7E]">
-              TechCare?
+              {BRAND.name}?
             </span>
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">

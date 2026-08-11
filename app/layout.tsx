@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "TechCare — Jasa IT Panggilan | Servis PC, Laptop & Jaringan",
+  title: "YourTechMate — Jasa IT Panggilan | Servis PC, Laptop & Jaringan",
   description:
     "Layanan IT profesional on-site di Jabodetabek. Servis PC & Laptop, Install OS & Software, Setup Jaringan/Wi-Fi, Rakit PC Custom. Teknisi berpengalaman, bergaransi, dan harga transparan.",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "Jabodetabek",
   ],
   openGraph: {
-    title: "TechCare — Jasa IT Panggilan",
+    title: "YourTechMate — Jasa IT Panggilan",
     description:
       "Teknisi IT profesional datang langsung ke lokasi Anda. Cepat, bergaransi, harga transparan.",
     type: "website",
