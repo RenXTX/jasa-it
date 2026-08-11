@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Shield, Clock, Star, ChevronDown } from "lucide-react";
 import { WHATSAPP_NUMBER } from "@/lib/config";
 
@@ -16,12 +16,12 @@ const trustBadges = [
   { icon: Clock, label: "Respon Cepat" },
 ];
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" as const },
+    transition: { delay: i * 0.15, duration: 0.6 },
   }),
 };
 
