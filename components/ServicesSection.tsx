@@ -106,7 +106,7 @@ export default function ServicesSection() {
             return (
               <motion.div
                 key={service.id}
-                variants={cardVariants}
+                variants={cardVariants} 
                 className="group relative flex flex-col bg-[#111827] border border-white/5 rounded-2xl p-6 hover:border-[#25D366]/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/40 overflow-hidden"
               >
                 {/* Card background gradient */}

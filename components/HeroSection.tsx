@@ -21,7 +21,7 @@ const fadeUp = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" },
+    transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" as const },
   }),
 };
 
@@ -146,7 +146,7 @@ export default function HeroSection() {
       <motion.div
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: [0, 8, 0] }}
-        transition={{ delay: 2, duration: 1.5, repeat: Infinity, repeatType: "loop", ease: "easeInOut" }}
+        transition={{ delay: 2, duration: 1.5, repeat: Infinity, repeatType: "loop", ease: "easeInOut" as const }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
         <ChevronDown size={24} className="text-slate-600" />
