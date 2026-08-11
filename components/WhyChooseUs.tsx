@@ -16,7 +16,7 @@ const reasons = [
   },
   {
     icon: ShieldCheck,
-    title: "Garansi Servis",
+    title: "Garansi Maintenance",
     description:
       "Setiap pekerjaan dilengkapi dengan garansi. Jika masalah yang sama muncul kembali dalam periode garansi, kami kembali tanpa biaya tambahan.",
     color: "text-[#25D366]",
@@ -27,7 +27,7 @@ const reasons = [
     icon: MapPin,
     title: "Panggilan On-Site",
     description:
-      "Teknisi kami yang datang ke lokasi Anda — rumah, kantor, atau kos. Tidak perlu repot membawa perangkat berat ke tempat servis.",
+      "Teknisi kami yang datang ke lokasi Anda — rumah, kantor, atau kos. Tidak perlu repot membawa perangkat berat ke tempat maintenance.",
     color: "text-blue-400",
     bg: "bg-blue-400/10",
     border: "border-blue-400/20",
@@ -123,7 +123,7 @@ export default function WhyChooseUs() {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { value: "500+", label: "Pelanggan Puas" },
+            { value: "50+", label: "Pelanggan Puas" },
             { value: "98%", label: "Tingkat Keberhasilan" },
             { value: "< 2 Jam", label: "Waktu Respons" },
             { value: "3 Tahun", label: "Pengalaman" },

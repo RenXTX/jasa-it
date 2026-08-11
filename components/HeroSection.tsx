@@ -11,7 +11,7 @@ const WA_ICON = () => (
 );
 
 const trustBadges = [
-  { icon: Shield, label: "Servis Bergaransi" },
+  { icon: Shield, label: "Maintenance Bergaransi" },
   { icon: Star, label: "Teknisi Berpengalaman" },
   { icon: Clock, label: "Respon Cepat" },
 ];
@@ -90,7 +90,7 @@ export default function HeroSection() {
           variants={fadeUp}
           className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Servis PC & Laptop, Install OS & Software, Setup Jaringan, hingga
+          Maintenance PC & Laptop, Install OS & Software, Setup Jaringan, hingga
           Rakit PC Custom — <strong className="text-slate-200">cepat, bergaransi</strong>, dan teknisi langsung datang ke lokasi Anda.
         </motion.p>
 

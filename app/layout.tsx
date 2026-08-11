@@ -9,13 +9,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "YourTechMate — Jasa IT Panggilan | Servis PC, Laptop & Jaringan",
+  title: "YourTechMate — Jasa IT Panggilan | Maintenance PC, Laptop & Jaringan",
   description:
-    "Layanan IT profesional on-site di area Jakarta, Bogor, Depok, dan Bekasi. Servis PC & Laptop, Install OS & Software, Setup Jaringan/Wi-Fi, Rakit PC Custom. Teknisi berpengalaman, bergaransi, dan harga transparan.",
+    "Layanan IT profesional on-site di area Jakarta, Bogor, Depok, dan Bekasi. Maintenance PC & Laptop, Install OS & Software, Setup Jaringan/Wi-Fi, Rakit PC Custom. Teknisi berpengalaman, bergaransi, dan harga transparan.",
   keywords: [
     "jasa IT panggilan",
-    "servis laptop panggilan",
-    "servis PC rumahan",
+    "maintenance laptop panggilan",
+    "maintenance PC rumahan",
     "install windows",
     "setup wifi",
     "rakit PC gaming",

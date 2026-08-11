@@ -27,8 +27,8 @@ export const COVERAGE_AREAS = [
 
 export const SERVICES = [
   {
-    id: "servis-pc",
-    label: "Servis & Troubleshooting PC/Laptop",
+    id: "maintenance-pc",
+    label: "Maintenance & Troubleshooting PC/Laptop",
   },
   {
     id: "install-os",

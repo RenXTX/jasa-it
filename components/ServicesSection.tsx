@@ -6,9 +6,9 @@ import { WHATSAPP_NUMBER } from "@/lib/config";
 
 const services = [
   {
-    id: "servis-pc",
+    id: "maintenance-pc",
     icon: Monitor,
-    title: "Servis & Troubleshooting PC/Laptop",
+    title: "Maintenance & Troubleshooting PC/Laptop",
     description:
       "Diagnosa dan perbaikan menyeluruh untuk PC & laptop Anda — mulai dari layar mati, overheat, virus, blue screen, hingga kerusakan hardware. Teknisi berpengalaman siap datang ke lokasi.",
     tag: "Paling Populer",
