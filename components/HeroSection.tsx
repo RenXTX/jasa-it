@@ -61,7 +61,7 @@ export default function HeroSection() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#25D366]" />
           </span>
-          Tersedia Sekarang — Siap Datang ke Lokasi Anda
+          Siap Datang ke Lokasi Anda
         </motion.div>
 
         {/* Main headline */}
