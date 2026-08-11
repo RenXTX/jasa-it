@@ -10,7 +10,7 @@ export const BRAND = {
   tagline: "Jasa IT Panggilan",
   fullName: "YourTechMate — Jasa IT Panggilan",
   email: "yourtechmate@email.com",
-  instagram: "https://instagram.com/yourtechmate",
+  instagram: "https://instagram.com/12342142",
 };
 
 export const OPERATING_HOURS = {
