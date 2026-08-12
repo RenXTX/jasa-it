@@ -9,44 +9,35 @@ const reasons = [
     icon: DollarSign,
     title: "Biaya Transparan",
     description:
-      "Estimasi biaya diberikan di awal sebelum pekerjaan dimulai. Tidak ada biaya tersembunyi atau kejutan di akhir — harga yang disepakati adalah harga final.",
-    color: "text-yellow-400",
-    bg: "bg-yellow-400/10",
-    border: "border-yellow-400/20",
+      "Estimasi biaya diberikan transparan di awal sebelum pekerjaan dimulai. Tanpa biaya tersembunyi — harga disepakati adalah harga final.",
   },
   {
     icon: ShieldCheck,
     title: "Garansi Maintenance",
     description:
-      "Setiap pekerjaan dilengkapi dengan garansi. Jika masalah yang sama muncul kembali dalam periode garansi, kami kembali tanpa biaya tambahan.",
-    color: "text-[#25D366]",
-    bg: "bg-[#25D366]/10",
-    border: "border-[#25D366]/20",
+      "Setiap pekerjaan dilindungi garansi resmi. Jika timbul keluhan serupa dalam masa garansi, teknisi kembali tanpa biaya tambahan.",
   },
   {
     icon: MapPin,
     title: "Panggilan On-Site",
     description:
-      "Teknisi kami yang datang ke lokasi Anda — rumah, kantor, atau kos. Tidak perlu repot membawa perangkat berat ke tempat maintenance.",
-    color: "text-blue-400",
-    bg: "bg-blue-400/10",
-    border: "border-blue-400/20",
+      "Teknisi ahli hadir langsung ke rumah, kantor, atau lokasi Anda. Hemat waktu tanpa perlu membawa perangkat ke mana-mana.",
   },
   {
     icon: Zap,
     title: "Respon & Eksekusi Cepat",
     description:
-      "Kami merespons pesan WhatsApp dengan cepat dan menjadwalkan kunjungan sesuai waktu yang Anda inginkan. Target penyelesaian dalam satu kunjungan.",
-    color: "text-purple-400",
-    bg: "bg-purple-400/10",
-    border: "border-purple-400/20",
+      "Respon pesan WhatsApp dalam hitungan menit dan penjadwalan tepat waktu. Target penyelesaian masalah cepat dalam satu kunjungan.",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section id="keunggulan" className="py-24 bg-[#0A0F1E]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="keunggulan" className="py-24 bg-neutral-950 border-t border-neutral-900 relative overflow-hidden">
+      {/* Subtle glow */}
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[140px] pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,17 +46,17 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-1.5 rounded-full bg-[#25D366]/10 border border-[#25D366]/20 text-[#25D366] text-sm font-semibold mb-4 tracking-wider uppercase">
-            Keunggulan Kami
+          <span className="inline-block px-4 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-zinc-400 text-xs font-semibold uppercase tracking-widest mb-4">
+            Keunggulan Utama
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
-            Kenapa Pilih{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#25D366] to-[#128C7E]">
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-white mb-4 tracking-tight">
+            Mengapa Memilih{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-500">
               {BRAND.name}?
             </span>
           </h2>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            Kepercayaan Anda adalah prioritas kami. Ini yang membedakan kami dari layanan IT lainnya.
+          <p className="text-zinc-400 text-base sm:text-lg max-w-xl mx-auto">
+            Standar pelayanan IT profesional dengan fokus pada transparansi, kecepatan, dan kepuasan pelanggan.
           </p>
         </motion.div>
 
@@ -80,35 +71,23 @@ export default function WhyChooseUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group relative p-6 rounded-2xl bg-[#111827] border ${item.border} hover:border-opacity-60 transition-all duration-300 hover:-translate-y-1`}
+                className="group relative p-6 rounded-2xl bg-black border border-neutral-800/80 hover:border-white/40 transition-all duration-300 hover:-translate-y-1 shadow-xl"
               >
-                {/* Icon */}
-                <div
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center mb-5 ${item.bg}`}
-                >
-                  <Icon size={24} className={item.color} />
+                {/* Icon Container */}
+                <div className="w-12 h-12 rounded-xl bg-neutral-900 border border-neutral-800 flex items-center justify-center mb-5 text-white group-hover:bg-white group-hover:text-black transition-all duration-300 shadow-md">
+                  <Icon size={22} />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-white/80 transition-colors duration-200">
+                <h3 className="text-base font-bold text-white mb-2 tracking-tight group-hover:text-zinc-200 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-zinc-400 text-xs leading-relaxed">
                   {item.description}
                 </p>
 
-                {/* Bottom accent line */}
-                <div
-                  className={`absolute bottom-0 left-0 right-0 h-0.5 rounded-b-2xl bg-gradient-to-r ${
-                    item.color === "text-yellow-400"
-                      ? "from-yellow-400/50"
-                      : item.color === "text-[#25D366]"
-                      ? "from-[#25D366]/50"
-                      : item.color === "text-blue-400"
-                      ? "from-blue-400/50"
-                      : "from-purple-400/50"
-                  } to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
-                />
+                {/* Subtle bottom line highlight */}
+                <div className="absolute bottom-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.div>
             );
           })}
@@ -126,16 +105,16 @@ export default function WhyChooseUs() {
             { value: "50+", label: "Pelanggan Puas" },
             { value: "98%", label: "Tingkat Keberhasilan" },
             { value: "< 2 Jam", label: "Waktu Respons" },
-            { value: "3 Tahun", label: "Pengalaman" },
+            { value: "3+ Tahun", label: "Pengalaman Kerja" },
           ].map((stat) => (
             <div
               key={stat.label}
-              className="text-center p-5 rounded-2xl bg-[#111827] border border-white/5"
+              className="text-center p-6 rounded-2xl bg-black border border-neutral-800/80 hover:border-neutral-700 transition-all"
             >
-              <div className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-[#25D366] to-[#128C7E] mb-1">
+              <div className="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400 mb-1">
                 {stat.value}
               </div>
-              <div className="text-sm text-slate-400 font-medium">{stat.label}</div>
+              <div className="text-xs text-zinc-400 font-semibold uppercase tracking-wider">{stat.label}</div>
             </div>
           ))}
         </motion.div>

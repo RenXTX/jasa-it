@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { Shield, Clock, Star, ChevronDown } from "lucide-react";
+import { Shield, Clock, Star, ChevronDown, ArrowRight, CheckCircle2 } from "lucide-react";
 import { WHATSAPP_NUMBER } from "@/lib/config";
 
 const WA_ICON = () => (
@@ -11,9 +11,9 @@ const WA_ICON = () => (
 );
 
 const trustBadges = [
-  { icon: Shield, label: "Maintenance Bergaransi" },
+  { icon: Shield, label: "Garansi Resmi" },
   { icon: Star, label: "Teknisi Berpengalaman" },
-  { icon: Clock, label: "Respon Cepat" },
+  { icon: Clock, label: "Respon Cepat On-Site" },
 ];
 
 const fadeUp: Variants = {
@@ -32,34 +32,34 @@ export default function HeroSection() {
   const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`;
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A0F1E] pt-20">
-      {/* Background glow blobs */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-24 pb-16">
+      {/* Ambient Lighting & Glow Effects */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#25D366]/5 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-[100px]" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-white/5 rounded-full blur-[160px]" />
+        <div className="absolute bottom-10 left-10 w-[300px] h-[300px] bg-zinc-700/10 rounded-full blur-[120px]" />
       </div>
 
-      {/* Grid pattern overlay */}
+      {/* Grid Pattern Overlay */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)`,
-          backgroundSize: "60px 60px",
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)`,
+          backgroundSize: "64px 64px",
         }}
       />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
         {/* Eyebrow badge */}
         <motion.div
           custom={0}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#25D366]/10 border border-[#25D366]/20 text-[#25D366] text-sm font-medium mb-8"
+          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-neutral-900/80 border border-neutral-800 text-zinc-300 text-xs font-semibold tracking-wide uppercase mb-8 shadow-inner"
         >
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#25D366]" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-white" />
           </span>
           Siap Datang ke Lokasi Anda
         </motion.div>
@@ -70,16 +70,12 @@ export default function HeroSection() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight mb-6"
+          className="text-4xl sm:text-6xl md:text-7xl font-black text-white leading-[1.1] tracking-tight mb-6"
         >
           Komputer Bermasalah?{" "}
-          <span className="relative inline-block">
-            <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#25D366] to-[#128C7E]">
-              Kami Datang
-            </span>
-            <span className="absolute -bottom-1 left-0 right-0 h-[3px] bg-gradient-to-r from-[#25D366] to-[#128C7E] rounded-full" />
-          </span>{" "}
-          Langsung ke Tempat Anda!
+          <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-500">
+            Kami Datang Langsung.
+          </span>
         </motion.h1>
 
         {/* Sub-headline */}
@@ -88,36 +84,38 @@ export default function HeroSection() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-base sm:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed font-normal"
         >
           Maintenance PC & Laptop, Install OS & Software, Setup Jaringan, hingga
-          Rakit PC Custom — <strong className="text-slate-200">cepat, bergaransi</strong>, dan teknisi langsung datang ke lokasi Anda.
+          Rakit PC Custom —{" "}
+          <strong className="text-white font-semibold">cepat, bergaransi</strong>,
+          dan teknisi profesional hadir di tempat Anda.
         </motion.p>
 
-        {/* CTA Button */}
+        {/* CTA Buttons */}
         <motion.div
           custom={3}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
         >
           <a
             href={waLink}
             target="_blank"
             rel="noopener noreferrer"
             id="hero-wa-cta"
-            className="group flex items-center gap-3 px-8 py-4 rounded-2xl bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold text-lg transition-all duration-300 shadow-xl shadow-[#25D366]/30 hover:shadow-[#25D366]/50 hover:-translate-y-1 active:translate-y-0"
+            className="group w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white text-black font-extrabold text-sm uppercase tracking-wider transition-all duration-300 shadow-xl shadow-white/10 hover:shadow-white/25 hover:scale-[1.02] active:scale-95"
           >
             <WA_ICON />
             Chat WhatsApp Sekarang
-            <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#layanan"
-            className="flex items-center gap-2 px-6 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 hover:text-white font-medium text-base transition-all duration-200"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-800 text-zinc-300 hover:text-white font-semibold text-sm transition-all duration-200"
           >
-            Lihat Layanan
+            Jelajahi Layanan
             <ChevronDown size={16} />
           </a>
         </motion.div>
@@ -133,10 +131,10 @@ export default function HeroSection() {
           {trustBadges.map(({ icon: Icon, label }) => (
             <div
               key={label}
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"
+              className="flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-900/60 border border-neutral-800 text-zinc-300 text-xs font-medium backdrop-blur-md hover:border-zinc-700 transition-colors"
             >
-              <Icon size={14} className="text-[#25D366]" />
-              <span className="text-sm text-slate-300 font-medium">{label}</span>
+              <Icon size={14} className="text-white" />
+              <span>{label}</span>
             </div>
           ))}
         </motion.div>
@@ -147,9 +145,9 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: [0, 8, 0] }}
         transition={{ delay: 2, duration: 1.5, repeat: Infinity, repeatType: "loop", ease: "easeInOut" as const }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2"
       >
-        <ChevronDown size={24} className="text-slate-600" />
+        <ChevronDown size={22} className="text-zinc-600" />
       </motion.div>
     </section>
   );

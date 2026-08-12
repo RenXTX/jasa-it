@@ -14,11 +14,10 @@ export default function FloatingWAButton() {
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1.5, duration: 0.4, type: "spring", stiffness: 200 }}
-      className="fixed bottom-6 right-6 z-50 w-14 h-14"
+      className="fixed bottom-6 right-6 z-50 w-14 h-14 group"
     >
-      {/* Pulse rings */}
-      <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-25" />
-      <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-10 animation-delay-500" />
+      {/* Pulse Ring */}
+      <span className="absolute inset-0 rounded-full bg-white animate-ping opacity-10" />
 
       <a
         href={waLink}
@@ -42,13 +41,12 @@ export default function FloatingWAButton() {
       <motion.div
         initial={{ opacity: 0, x: 10 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 2.2 }}
+        transition={{ delay: 2.5 }}
         className="absolute right-16 top-1/2 -translate-y-1/2 pointer-events-none hidden lg:block"
       >
-        <div className="bg-[#111827] border border-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap shadow-xl">
+        <div className="bg-black border border-neutral-800 text-white text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap shadow-xl">
           Chat via WhatsApp
-          {/* Arrow */}
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full border-8 border-transparent border-l-[#111827]" />
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full border-8 border-transparent border-l-black" />
         </div>
       </motion.div>
     </motion.div>

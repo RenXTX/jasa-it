@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 /* =========================================
-   Design Tokens & Brand Colors
+   Design Tokens & Brand Colors — Luxury B&W
    ========================================= */
 :root {
-  --bg-primary: #0a0f1e;
-  --bg-secondary: #0d1526;
-  --bg-card: #111827;
+  --bg-primary: #000000;
+  --bg-secondary: #08080a;
+  --bg-card: #121215;
+  --color-accent-white: #ffffff;
   --color-wa: #25d366;
   --color-wa-hover: #1ebe57;
-  --color-wa-dark: #128c7e;
-  --text-primary: #f9fafb;
-  --text-secondary: #94a3b8;
-  --text-muted: #4b5563;
-  --border-subtle: #1e293b;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-glow: rgba(255, 255, 255, 0.25);
 }
 
 /* =========================================
@@ -30,45 +31,67 @@ body {
   color: var(--text-primary);
   font-family: var(--font-inter, system-ui, -apple-system, sans-serif);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* =========================================
-   Custom Scrollbar
+   Custom Scrollbar (Sleek B&W)
    ========================================= */
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
+  background: #050505;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--border-subtle);
-  border-radius: 3px;
+  background: #262626;
+  border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-wa-dark);
+  background: #525252;
 }
 
 /* =========================================
    Selection Color
    ========================================= */
 ::selection {
-  background: #25d36640;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 /* =========================================
-   Smooth focus ring
+   Smooth Focus Ring
    ========================================= */
 *:focus-visible {
-  outline: 2px solid var(--color-wa);
+  outline: 2px solid #ffffff;
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 /* =========================================
-   Floating WA Button animation delay utility
+   Custom Utility Animations & Effects
    ========================================= */
 .animation-delay-500 {
   animation-delay: 0.5s;
+}
+
+/* Subtle silver sheen background animation */
+@keyframes sheen {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-sheen {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: sheen 6s infinite;
 }
