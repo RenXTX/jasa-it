@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Layanan", href: "#layanan" },
   { label: "Keunggulan", href: "#keunggulan" },
   { label: "Area Jangkauan", href: "#area" },
-  { label: "Pesan Sekarang", href: "#pesan" },
+  { label: "Panggil sekarang", href: "#pesan" },
 ];
 
 export default function Navbar() {
