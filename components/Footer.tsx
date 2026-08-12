@@ -88,15 +88,15 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-[#25D366] mt-1.5 flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-white font-medium">Senin – Sabtu</p>
-                  <p className="text-xs text-slate-400">08.00 – 20.00 WIB</p>
+                  <p className="text-sm text-white font-medium">Senin – Jum'at</p>
+                  <p className="text-xs text-slate-400">08.00 – 18.00 WIB</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 rounded-full bg-yellow-400 mt-1.5 flex-shrink-0" />
                 <div>
-                  <p className="text-sm text-white font-medium">Minggu</p>
-                  <p className="text-xs text-slate-400">09.00 – 17.00 WIB</p>
+                  <p className="text-sm text-white font-medium">Sabtu - Minggu</p>
+                  <p className="text-xs text-slate-400">09.00 – 13.00 WIB</p>
                 </div>
               </div>
               <div className="mt-4 p-3 rounded-xl bg-[#25D366]/5 border border-[#25D366]/15">
