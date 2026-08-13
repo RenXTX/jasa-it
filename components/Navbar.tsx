@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Cpu, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import { BRAND, WHATSAPP_NUMBER } from "@/lib/config";
 
 const navLinks = [
@@ -35,8 +36,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-12 md:h-14">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white via-zinc-200 to-zinc-400 flex items-center justify-center shadow-lg shadow-white/10 group-hover:shadow-white/20 transition-all duration-300 group-hover:scale-105">
-              <Cpu size={20} className="text-black stroke-[2.5]" />
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white via-zinc-200 to-zinc-400 flex items-center justify-center shadow-lg shadow-white/10 group-hover:shadow-white/20 transition-all duration-300 group-hover:scale-105 overflow-hidden">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={28}
+                height={28}
+                className="object-contain mix-blend-multiply"
+              />
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-extrabold text-white text-base tracking-tight group-hover:text-zinc-200 transition-colors">

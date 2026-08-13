@@ -1,6 +1,7 @@
 "use client";
 
-import { Cpu, Globe, MessageCircle, ArrowUpRight } from "lucide-react";
+import { Globe, MessageCircle, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import { BRAND, WHATSAPP_NUMBER } from "@/lib/config";
 
 const footerLinks = [
@@ -21,8 +22,14 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-5">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white via-zinc-200 to-zinc-500 flex items-center justify-center shadow-md shadow-white/10">
-                <Cpu size={20} className="text-black stroke-[2.5]" />
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white via-zinc-200 to-zinc-500 flex items-center justify-center shadow-md shadow-white/10 overflow-hidden">
+                <Image
+                  src="/logo.png"
+                  alt="Logo"
+                  width={28}
+                  height={28}
+                  className="object-contain mix-blend-multiply"
+                />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-extrabold text-white text-base">{BRAND.name}</span>
