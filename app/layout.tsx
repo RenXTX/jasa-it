@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "YourTechMate — Jasa IT Panggilan | Maintenance PC, Laptop & Jaringan",
+  title: "GO IT CILEUNGSI — Jasa IT Panggilan | Maintenance PC, Laptop & Jaringan",
   description:
     "Layanan IT profesional on-site di area Jakarta, Bogor, Depok, dan Bekasi. Maintenance PC & Laptop, Install OS & Software, Setup Jaringan/Wi-Fi, Rakit PC Custom. Teknisi berpengalaman, bergaransi, dan harga transparan.",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "Jakarta Bogor Depok Bekasi",
   ],
   openGraph: {
-    title: "YourTechMate — Jasa IT Panggilan",
+    title: "GO IT CILEUNGSI — Jasa IT Panggilan",
     description:
       "Teknisi IT profesional datang langsung ke lokasi Anda. Cepat, bergaransi, harga transparan.",
     type: "website",

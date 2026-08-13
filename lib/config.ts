@@ -6,9 +6,9 @@
 export const WHATSAPP_NUMBER = "6281295844201";
 
 export const BRAND = {
-  name: "YourTechMate",
+  name: "GO IT CILEUNGSI",
   tagline: "Jasa IT Panggilan",
-  fullName: "YourTechMate — Jasa IT Panggilan",
+  fullName: "GO IT CILEUNGSI — Jasa IT Panggilan",
   email: "yourtechmate@email.com",
   instagram: "https://instagram.com/",
 };
