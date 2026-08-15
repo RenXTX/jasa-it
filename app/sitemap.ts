@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://goit-cileungsi.vercel.app"; // Ganti dengan domain Anda
+  const baseUrl = "https://go-it-cls.vercel.app";
 
   return [
     {

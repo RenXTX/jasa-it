@@ -8,7 +8,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://goit-cileungsi.vercel.app"; // Ganti dengan domain Anda
+const SITE_URL = "https://go-it-cls.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

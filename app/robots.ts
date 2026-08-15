@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://goit-cileungsi.vercel.app"; // Ganti dengan domain Anda
+  const baseUrl = "https://go-it-cls.vercel.app";
 
   return {
     rules: [
